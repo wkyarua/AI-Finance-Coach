@@ -1,1 +1,100 @@
- jkv.jvcd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSense AI | Your Money, Smarter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-color: #6366f1;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto animate__animated animate__fadeInDown">
+        <div class="text-2xl font-800 tracking-tighter">FIN<span class="text-indigo-500">SENSE</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium opacity-80">
+            <a href="#" class="hover:text-indigo-400 transition">Product</a>
+            <a href="#" class="hover:text-indigo-400 transition">Security</a>
+            <a href="#" class="hover:text-indigo-400 transition">Pricing</a>
+        </div>
+        <button class="bg-indigo-600 hover:bg-indigo-500 px-6 py-2 rounded-full font-semibold transition-all">Get Started</button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-20 pb-12 text-center">
+        <h1 class="text-5xl md:text-8xl font-800 mb-6 animate__animated animate__zoomIn">
+            Stop Tracking. <br> <span class="gradient-text">Start Growing.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 animate__animated animate__fadeInUp animate__delay-1s">
+            The first AI-native finance coach that talks to you like a human and thinks like a hedge fund manager.
+        </p>
+        
+        <div class="flex flex-col md:flex-row justify-center gap-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <button class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">Download App</button>
+            <button class="glass-card px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">View Demo</button>
+        </div>
+
+        <div class="mt-20 glass-card rounded-3xl p-4 md:p-8 animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="flex justify-between items-end mb-8">
+                <div class="text-left">
+                    <p class="text-slate-400 text-sm">Monthly Savings</p>
+                    <h2 class="text-4xl font-bold">$4,280.50</h2>
+                </div>
+                <div class="text-right text-green-400 font-bold">+12.4%</div>
+            </div>
+            <div class="h-48 w-full bg-gradient-to-t from-indigo-500/20 to-transparent rounded-lg flex items-end justify-between px-4 pb-2 gap-2">
+                <div class="w-full bg-indigo-500/40 rounded-t h-1/2"></div>
+                <div class="w-full bg-indigo-500/60 rounded-t h-2/3"></div>
+                <div class="w-full bg-indigo-500/80 rounded-t h-3/4"></div>
+                <div class="w-full bg-indigo-500 rounded-t h-full"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-2xl">
+            <div class="text-3xl mb-4">🤖</div>
+            <h3 class="text-xl font-bold mb-2">AI Coaching</h3>
+            <p class="text-slate-400 text-sm">Real-time voice and text guidance to help you make better spending decisions on the fly.</p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl">
+            <div class="text-3xl mb-4">🔒</div>
+            <h3 class="text-xl font-bold mb-2">Bank-Level Security</h3>
+            <p class="text-slate-400 text-sm">We use 256-bit AES encryption. Your data is yours. We never see your login credentials.</p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl">
+            <div class="text-3xl mb-4">📊</div>
+            <h3 class="text-xl font-bold mb-2">Smart Insights</h3>
+            <p class="text-slate-400 text-sm">Visualizations that actually make sense. No more digging through confusing spreadsheets.</p>
+        </div>
+    </section>
+
+</body>
+</html>
