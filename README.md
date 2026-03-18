@@ -96,4 +96,4 @@ AI Finance Coach is a full-stack application that provides users with an AI-powe
 ---
 
 ### Authors
-- Project bootstrapped and integrated by wkyarua and GitHub Copilot
+- Project bootstrapped and integrated by wkyarua and Topsy-yy
